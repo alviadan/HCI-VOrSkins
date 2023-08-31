@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    font-size: 18px;
+    background-image: linear-gradient(260deg, #000 0%, #000 100%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbar ul li a {
+    text-transform: uppercase;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 800px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: grey;
+    }
+}
+
+/* content  */
+
+.section1 {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../!Gambar/Gambar-Produk/skinker.jpg);
+    background-size: cover;
+    display: flex;
+}
+
+.section1 h2{
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin: auto;
+    color: #000;
+}
+
+.kata{
+    margin: 40px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #10182f;
+    width: 900px;
+    /* max-width: 1100px; */
+    /* border: 2px solid black; */
+    margin: auto;
+}
+
+.card {
+    margin: 20px 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    height: 20%;
+    background-color: rgb(231, 214, 198);
+    box-shadow: 2px 2px 2px grey;
+}
+
+.card-header img {
+    width: 100%;
+    height: 60%;
+}
+
+.Text{
+    width: 50%;
+    
+    
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        margin: auto;
+        width: auto;
+        padding-top: 20px;
+    }
+    .card{
+        margin: auto;
+    }
+    .Text{
+        margin: auto;
+        padding-top: 20px;
+    }
+}
+
+/* footer */
+.footer {
+    background: rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    width: 90%;
+    /* border: 2px solid white; */
+    margin: auto;
+}
+
+.footer .wrapper .column {
+    margin: 10px;
+    overflow: hidden;
+    width: 500px;
+    /* border: 2px solid white; */
+}
+
+.footer h4{
+    margin-bottom: 10px;
+}
+
+.footer_sosial {
+    display: grid;
+    justify-content: left;
+    text-decoration: none;
+    margin-bottom: 70px;
+}
+
+.footer_sosial ul li a {
+    text-decoration: none; 
+    overflow: hidden; 
+    color: white;
+    font-size: 20px;
+}
+.footer_sosial p{
+    margin-top: 70px;
+    font-size: 10px;
+}
+
+.footer_contact {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.footer_contact p{
+    font-size: 20px;
+    /* margin-top: 10px; */
+}
+
+.icon{
+    width: 30px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.footer .reserved{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.footer .reserved p{
+    font-size: 20px;
+    width: 90%;
+    margin: auto;
+}
